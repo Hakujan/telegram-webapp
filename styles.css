@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    width: 100%; /* Занимает всю ширину экрана */
+	height: 50px;
+    background-color: #3366FF;
+    color: white;
+    padding: 10px 0; /* Внутренние отступы */
+    text-align: center; /* Выравниваем текст по центру */
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.container {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.content {
+    padding: 150px;
+    background-image: url('../../img/01.jpg'); /* Установка фонового изображения */
+    background-size: cover; /* Масштабирование изображения по размеру блока */
+    background-position: center; /* Выравнивание изображения по центру блока */
+	background-repeat: no-repeat;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+#circles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button.hidden {
+    display: none;
+}
+
+#message {
+    font-size: 18px;
+    color: #333;
+    margin: 20px 0;
+}
+
+#progress-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.star {
+    font-size: 24px;
+    color: gray;
+    margin: 0 5px;
+}
+
+.star.active {
+    color: gold;
+}
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .circle {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .star {
+        font-size: 20px;
+        margin: 0 3px;
+    }
+}
